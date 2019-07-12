@@ -1,0 +1,33 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.NavigationItem {
+  list-style: none;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-left: 1.2em;
+  padding-right: 0.8em;
+  font-size: 16px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 30px 1fr 30px;
+}
+svg {
+  opacity: 0.6;
+  align-self: center;
+}
+.Blue {
+  fill: #039be5;
+}
+.Pink {
+  fill: #e91e63;
+}
+.NavigationItem span {
+  align-self: center;
+}
+.NavigationItem Count {
+  align-self: center;
+  opacity: 0.4;
+}

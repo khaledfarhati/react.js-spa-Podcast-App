@@ -1,0 +1,47 @@
+.List {
+  margin: 0;
+  padding: 0;
+}
+.Settings {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 35px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image name items button";
+}
+.Settings img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+.Header {
+  grid-area: name;
+  padding: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  align-self: center;
+}
+.Count {
+  grid-area: items;
+  padding: 5px;
+  align-self: center;
+}
+.Count::before {
+  content: "All: ";
+  font-weight: bold;
+  font-size: 18px;
+}
+.Unsubscribe {
+  grid-area: button;
+  background: #333;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 2px;
+  /*margin-right: 1em;*/
+  opacity: 0.8;
+  align-self: center;
+}

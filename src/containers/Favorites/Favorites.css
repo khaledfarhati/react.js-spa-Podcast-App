@@ -1,0 +1,66 @@
+.List ul {
+  margin: 0;
+  padding: 0;
+}
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.Grid .Podcast {
+  display: grid;
+  grid-template-columns: 1fr 0px;
+  border-bottom: none;
+}
+.Podcast {
+  background-color: inherit;
+
+  grid-template-areas:
+    "header actions"
+    "body body";
+}
+.List .Grid .Podcast .Header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "pimage"
+    "ptitle";
+}
+.Header {
+  grid-area: header;
+}
+.Podcast .Header img {
+  grid-area: pimage;
+  width: 90px;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.Podcast img {
+  border-radius: 4px;
+}
+.Podcast .Title {
+  grid-area: ptitle;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+.Title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 16px;
+}
+.Tail {
+  grid-area: tail;
+  opacity: 0.4;
+  font-size: 12px;
+  align-self: center;
+  justify-self: center;
+}

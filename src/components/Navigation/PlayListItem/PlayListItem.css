@@ -1,0 +1,61 @@
+li {
+  padding-left: 6px;
+}
+input {
+  outline: none;
+  background: inherit;
+  border: none;
+  font-size: 14px;
+  line-height: 5px;
+  padding: 5px;
+  width: calc(100% - 30px);
+}
+input:disabled {
+  user-select: none;
+}
+.Selected {
+  background-color: #e0e0e0;
+}
+.Menu {
+  width: 120px;
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: none;
+}
+.MenuItem {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 40px 10px 20px;
+  cursor: pointer;
+}
+.MenuItem:hover {
+  background: #ff9e9e33;
+}
+.ItemContainer nav {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  color: #373a3c;
+  font-size: 16px;
+  margin: 2px 0 0;
+  min-width: 160px;
+  outline: none;
+  opacity: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  text-align: left;
+  transition: opacity 250ms ease !important;
+}
+
+.ItemContainer nav div {
+  background: 0 0;
+  border: 0;
+  color: #373a3c;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 3px 20px;
+  text-align: inherit;
+  white-space: nowrap;
+}

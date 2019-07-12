@@ -1,0 +1,183 @@
+.Player {
+  background-color: #fff;
+  text-align: center;
+  height: 58px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100px 50px 50px 50px 70px 1fr 70px 100px 100px;
+  grid-template-areas:
+    "image replay play forward playback-title playback-title playback-title speed-title  volume-title"
+    "image replay play forward time progress duration speed-display volume-inputes";
+}
+
+.ProgressBar {
+  grid-area: progress;
+  align-self: baseline;
+  background-color: #ccc;
+  height: 5px;
+  border-radius: 2px;
+  margin-top: 3px;
+}
+.Progress {
+  background-color: #448aff;
+  height: 5px;
+  border-radius: 2px;
+  width: 0;
+}
+.Image {
+  grid-area: image;
+  align-self: center;
+  text-align: center;
+  margin-left: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+}
+.Title {
+  grid-area: playback-title;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #999;
+}
+.Podcast {
+  grid-area: image;
+  align-self: center;
+  justify-self: center;
+}
+.Backward {
+  grid-area: replay;
+  align-self: center;
+  justify-self: center;
+}
+.PausePlay {
+  grid-area: play;
+  align-self: center;
+  justify-self: center;
+}
+.Forward {
+  grid-area: forward;
+  align-self: center;
+  justify-self: center;
+}
+.Time {
+  grid-area: time;
+  align-self: baseline;
+  justify-self: right;
+  font-size: 12px;
+  padding: 0.2em;
+  padding-right: 0.5em;
+}
+.Duration {
+  grid-area: duration;
+  align-self: baseline;
+  justify-self: left;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 5px;
+}
+.Inputes {
+  grid-area: volume-inputes;
+  display: flex;
+}
+.ToolTip {
+  position: absolute;
+  top: 15px;
+  transform: translate(-50%);
+  opacity: 0;
+}
+.ToolTip :after {
+  content: " ";
+  position: absolute;
+  bottom: 96%;
+  left: 50%;
+  margin-left: -2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+.Player svg {
+  width: 27px;
+  height: 27px;
+  opacity: 0.65;
+}
+.SpeedTitle {
+  grid-area: speed-title;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.SpeedDisplay {
+  grid-area: speed-display;
+}
+.VolumeTitle {
+  grid-area: volume-title;
+  align-self: flex-end;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.Inputes {
+  grid-area: volume-inputes;
+}
+.Player button {
+  background-color: inherit;
+  outline: 0;
+  border: 0;
+}
+.Time {
+  grid-area: time;
+  align-self: baseline;
+  justify-self: right;
+  font-size: 12px;
+  padding: 2px;
+  padding-right: 5px;
+}
+.Duration {
+  grid-area: duration;
+  align-self: baseline;
+  justify-self: left;
+  font-size: 12px;
+  padding: 2px;
+  padding-left: 5px;
+}
+/*.Player {
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  color: #ccc;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+.Left {
+  width: 170px;
+  padding-left: 20px;
+}
+.Left button {
+  background: #fff;
+  border: 0;
+  outline: none;
+  margin-right: 10px;
+  color: #777;
+}
+.Icon {
+  font-size: 20px;
+  line-height: 0.5;
+}
+.Middle {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+*/

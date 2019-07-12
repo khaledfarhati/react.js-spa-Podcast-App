@@ -1,0 +1,46 @@
+.RightContent {
+  position: fixed;
+  left: 300px;
+  right: 0em;
+  overflow: auto;
+  height: 100vh;
+  border-left: 1px solid #e7e7e7;
+  display: grid;
+  grid-template-rows: 70px 1fr 60px;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "right-header"
+    "list"
+    "audio-player";
+}
+.Header {
+  grid-area: right-header;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 85px;
+}
+.Header h1 {
+  padding-left: 0;
+  margin-left: 10px;
+}
+h1 {
+  margin: 0;
+  padding: 5px;
+  display: inline-block;
+  width: calc(100% - 20px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.Body {
+  grid-area: list;
+  background: #fff;
+  /*height: calc(100% - 4.5em);*/
+  overflow: auto;
+}
+
+.Footer {
+  grid-area: audio-player;
+}
