@@ -19,7 +19,6 @@ class NewEpisodes extends Component {
     } else return;
   }
   render() {
-
     let episodes = null;
     if (
       this.props.selectedepisodes !== null &&
@@ -39,6 +38,16 @@ class NewEpisodes extends Component {
             title={this.state.loadedselectedepisode[key].title}
             url={this.state.loadedselectedepisode[key].url}
             deleteFavEpisodeHandler={this.props.deleteFavEpisodeHandler}
+            selectedPlayedEpisodeHandler={this.selectedPlayedEpisodeHandler}
+            played={() =>
+              this.props.selectedPlayedEpisodeHandler(
+                this.state.loadedselectedepisode[key].title,
+                this.state.loadedselectedepisode[key].duration,
+                this.state.loadedselectedepisode[key].url,
+                this.state.loadedselectedepisode[key].image,
+                this.state.loadedselectedepisode[key].duration
+              )
+            }
           />
         )
       );

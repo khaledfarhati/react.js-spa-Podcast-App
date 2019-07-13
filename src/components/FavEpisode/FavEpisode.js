@@ -26,7 +26,7 @@ const FavEpisode = props => {
     );
   }
   return connectDragSource(
-    <li className={classes.Item} index={index}>
+    <li className={classes.Item} index={index} onClick={props.played}>
       <img className={classes.Image} src={props.src} alt="" />
       <div className={classes.Bold}>{props.name}</div>
       <div className={classes.Sub}>{props.duration}</div>

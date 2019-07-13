@@ -50,6 +50,15 @@ class PlayList extends Component {
               deletePlayListFavEpisodeHandler={
                 this.props.deletePlayListFavEpisodeHandler
               }
+              played={() =>
+                this.props.selectedPlayedEpisodeHandler(
+                  episode.title,
+                  episode.duration,
+                  episode.url,
+                  episode.image,
+                  episode.duration
+                )
+              }
             />
           </div>
         ));
