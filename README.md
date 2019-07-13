@@ -1,12 +1,12 @@
-#Single Page Application was bootstrapped with Create React App. - Podcast App
+# Single Page Application was bootstrapped with Create React App. - Podcast App
 
-##Frameworks and Libraries:
+## Frameworks and Libraries:
 
 - React 16.8.4
 - react-router-dom
 - axios
 
-##Features:
+## Features:
 
 - Uses the iTunes API to search for Podcasts
 - Find all podcasts in the Find Podcasts Page
