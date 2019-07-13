@@ -217,6 +217,7 @@ class App extends Component {
               selectedepisodes={this.state.selectedepisodes}
               fullEpisodeHandler={this.fullEpisodeHandler}
               deleteFavEpisodeHandler={this.deleteFavEpisodeHandler}
+              selectedPlayedEpisodeHandler={this.selectedPlayedEpisodeHandler}
               {...props}
             />
           )}
@@ -229,6 +230,7 @@ class App extends Component {
               deletePlayListFavEpisodeHandler={
                 this.deletePlayListFavEpisodeHandler
               }
+              selectedPlayedEpisodeHandler={this.selectedPlayedEpisodeHandler}
               listitems={this.state.listitems}
             />
           )}
