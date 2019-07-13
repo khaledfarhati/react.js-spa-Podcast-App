@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Single Page Application was bootstrapped with Create React App. - Podcast App
 
-## Available Scripts
+##Frameworks and Libraries:
 
-In the project directory, you can run:
+- React 16.8.4
+- react-router-dom
+- axios
 
-### `npm start`
+##Features:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Uses the iTunes API to search for Podcasts
+- Find all podcasts in the Find Podcasts Page
+- Checked and Unchecked favorite podcasts
+- Selecte favorite podcast and get all the episodes
+- play and add wherever episode you want
+- Find all episodes added in New Episodes
+- Drag and Drop episodes to specific item list
+- Manage Playlists for custom playback
+- Speedy playback
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Tutorial
 
-### `npm test`
+### Find Podcasts
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![gif_1](img/findPodcasts.gif)
 
-### `npm run build`
+![gif_2](img/findPodcasts2.gif)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Favorites
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![gif_3](img/favorites.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Episodes
 
-### `npm run eject`
+![gif_4](img/episodesLoad.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![gif_5](img/episodes.gif)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![gif_6](img/dragAndDrop.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### PlayLists
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![gif_7](img/playlists1.gif)
 
-## Learn More
+### Player
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![gif_8](img/player.gif)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Development
 
-### Code Splitting
+`git clone https://github.com/khaledfarhati/react.js-spa-Podcast-App.git`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`npm install`
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+`npm run start`
